@@ -2,12 +2,11 @@ import java.util.Random;
 import java.util.Arrays;
 
 public class HelloWorld{
-    
-    static int MAX = 100;
+
 
      public static void main(String []args){
         int[] A;
-        A = createRandIntArray(20);
+        A = createRandIntArray(20, 100);
         System.out.println(Arrays.toString(A));
         
         int mResult;
@@ -41,7 +40,7 @@ public class HelloWorld{
         return i + j;
     }
 
-    static int[] createRandIntArray(int n){
+    static int[] createRandIntArray(int n, int MAX){
          Random rand = new Random();
          int[] result = new int[n];
          for(int i = 0; i < n; i++){
